@@ -26,17 +26,10 @@ npm run dev
 ```
 
 - **Frontend Portfolio**: [http://localhost:3000](http://localhost:3000)
-- **Admin Dashboard**: [http://localhost:3000/admin](http://localhost:3000/admin)
 - **Backend API**: [http://localhost:5000/api](http://localhost:5000/api)
 
 ---
 
-## 🔐 Admin Dashboard Credentials
-
-- **URL**: [http://localhost:3000/admin/login](http://localhost:3000/admin/login)
-- **Username**: `admin`
-- **Password**: `admin123`
-*(Auto-seeded into MongoDB on initial boot. Credentials are customizable in `server/.env`)*
 
 ---
 
