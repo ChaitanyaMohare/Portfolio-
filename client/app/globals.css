@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #F8F9FA;
+  --ink-color: #111111;
+  --electric: #C6F906;
+  --moss: #768948;
+  --sky: #0088FF;
+  --pastel-pink: #FFB8F6;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+  color: var(--ink-color);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font-plus-jakarta), sans-serif;
+  background-color: #F8F9FA;
+  color: #111111;
+}
+
+::selection {
+  background-color: #C6F906;
+  color: #111111;
+}
+
+/* Subtle dot-matrix pattern for corners and hero */
+.bg-dot-matrix {
+  background-image: radial-gradient(#111111 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-dot-matrix-dense {
+  background-image: radial-gradient(rgba(17, 17, 17, 0.25) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+/* Brutalist borders and hard dropshadows */
+.brutal-card {
+  border: 2px solid #111111;
+  box-shadow: 4px 4px 0px #111111;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.brutal-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #111111;
+}
+
+.brutal-btn {
+  border: 2px solid #111111;
+  box-shadow: 3px 3px 0px #111111;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  font-weight: 700;
+}
+
+.brutal-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #111111;
+}
+
+.brutal-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #111111;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F9FA;
+  border-left: 2px solid #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C6F906;
+}
